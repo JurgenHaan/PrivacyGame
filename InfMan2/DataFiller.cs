@@ -14,7 +14,12 @@ namespace InfMan2
             Data.trueFalseQuestionsList.Add(new Tuple<string, bool>("Privacy is een afweerrecht dat de persoonlijke levenssfeer beschermt", true));
             Data.trueFalseQuestionsList.Add(new Tuple<string, bool>("Privacy is alleen de verantwoordelijkheid van de gebruiker, niet van de ontwikkelaar", false));
             Data.trueFalseQuestionsList.Add(new Tuple<string, bool>("Een veilige webomgeving herken je aan het hangslotje en aan de adresregel dat begint met https.", true));
-            Data.trueFalseQuestionsList.Add(new Tuple<string, bool>("HTTPS staat voor HyperText Transfer Protocol Secure", true));
+            Data.trueFalseQuestionsList.Add(new Tuple<string, bool>("Privacy kan je onder andere beschermen door de voorwaarden van een" + System.Environment.NewLine + " applicatie te lezen die je gaat gebruiken", true));
+            Data.trueFalseQuestionsList.Add(new Tuple<string, bool>("Mogen organisaties altijd mijn persoonsgegevens verwerken volgens" + System.Environment.NewLine + " de Wet bescherming persoonsgegevens (Wbp)?", false));
+            Data.trueFalseQuestionsList.Add(new Tuple<string, bool>("Organisaties moeten voldoen aan een aantal eisen van de Wet bescherming persoonsgegevens"+ System.Environment.NewLine + " (Wbp) bij het verwekend van persoonsgegevens",true));
+            Data.trueFalseQuestionsList.Add(new Tuple<string, bool>("Als een organisatie zich voldoet aan de eisen van de Wet " + System.Environment.NewLine + "bescherming persoonsgegevens (Wbp), betekent dit dat mijn informatie veilig is?", false));
+
+
             Data.abcdQuestionsList.Add(new ABCDModel("Wat is privacy?", "B", "Een spel", "Een afweerrecht", "Een hoax","Een ideologie"));
         }
 
