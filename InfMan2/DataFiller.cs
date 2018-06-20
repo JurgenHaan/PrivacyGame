@@ -22,7 +22,7 @@ namespace InfMan2
 
             Data.abcdQuestionsList.Add(new ABCDModel("Wat is privacy?", "B", "Een spel", "Een afweerrecht", "Een hoax","Een ideologie"));
             Data.abcdQuestionsList.Add(new ABCDModel("Waarvoor is privacy bedoelt?", "A", "Persoonlijke gegevens beschermen", "Toegang geven tot je gegevens", "Delen van informatie", ""));
-            Data.abcdQuestionsList.Add(new ABCDModel("Waar staat AVG voor ?", "B", "Algemene Verordering Gegevensbescherming", "Algemene Gegevens Verdediging", "Algemene Verdediging Gezondheid", "Algemene Voordering Gemeenschap"));
+            Data.abcdQuestionsList.Add(new ABCDModel("Waar staat AVG voor ?", "A", "Algemene Verordering Gegevensbescherming", "Algemene Gegevens Verdediging", "Algemene Verdediging Gezondheid", "Algemene Voordering Gemeenschap"));
 
         }
 
