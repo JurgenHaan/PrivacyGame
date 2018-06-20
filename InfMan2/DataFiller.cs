@@ -21,6 +21,8 @@ namespace InfMan2
             Data.trueFalseQuestionsList.Add(new Tuple<string, bool>("Persoonsgegevens zijn geven direct of indirect informatie over een persoon", true));
 
             Data.abcdQuestionsList.Add(new ABCDModel("Wat is privacy?", "B", "Een spel", "Een afweerrecht", "Een hoax","Een ideologie"));
+            Data.abcdQuestionsList.Add(new ABCDModel("Waarvoor is privacy bedoelt?", "A", "Persoonlijke gegevens beschermen", "Toegang geven tot je gegevens", "Delen van informatie", ""));
+
         }
 
         public static void fillHighscore()
