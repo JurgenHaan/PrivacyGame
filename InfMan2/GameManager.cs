@@ -53,6 +53,7 @@ namespace InfMan2
             {
                 Form lastOpenedForm = Application.OpenForms.Cast<Form>().Last();
                 lastOpenedForm.Controls["label14"].Text = Int32.Parse(lastOpenedForm.Controls["label14"].Text) + Int32.Parse(lastOpenedForm.Controls["label13"].Text) + "";
+                lastOpenedForm.Controls["label13"].Text = Int32.Parse(lastOpenedForm.Controls["label13"].Text) + 10 + "";
                 showQuestion();
             } else
             {
