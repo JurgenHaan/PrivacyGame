@@ -19,10 +19,12 @@ namespace InfMan2
             Data.trueFalseQuestionsList.Add(new Tuple<string, bool>("Organisaties moeten voldoen aan een aantal eisen van de Wet bescherming persoonsgegevens"+ System.Environment.NewLine + " (Wbp) bij het verwekend van persoonsgegevens",true));
             Data.trueFalseQuestionsList.Add(new Tuple<string, bool>("Als een organisatie zich voldoet aan de eisen van de Wet " + System.Environment.NewLine + "bescherming persoonsgegevens (Wbp), betekent dit dat mijn informatie veilig is?", false));
             Data.trueFalseQuestionsList.Add(new Tuple<string, bool>("Persoonsgegevens zijn geven direct of indirect informatie over een persoon", true));
+            Data.trueFalseQuestionsList.Add(new Tuple<string, bool>("Bedrijven kunnen geen boete krijgen bij het overtreden van privacy wetten.", false));
 
             Data.abcdQuestionsList.Add(new ABCDModel("Wat is privacy?", "B", "Een spel", "Een afweerrecht", "Een hoax","Een ideologie"));
             Data.abcdQuestionsList.Add(new ABCDModel("Waarvoor is privacy bedoelt?", "A", "Persoonlijke gegevens beschermen", "Toegang geven tot je gegevens", "Delen van informatie", ""));
             Data.abcdQuestionsList.Add(new ABCDModel("Waar staat AVG voor ?", "A", "Algemene Verordering Gegevensbescherming", "Algemene Gegevens Verdediging", "Algemene Verdediging Gezondheid", "Algemene Voordering Gemeenschap"));
+            Data.abcdQuestionsList.Add(new ABCDModel("", "B", "Een spel", "Een afweerrecht", "Een hoax", "Een ideologie"));
 
         }
 
