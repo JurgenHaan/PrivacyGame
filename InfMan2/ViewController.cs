@@ -18,6 +18,7 @@ namespace InfMan2
             lastOpenedForm.Controls["label1"].Visible = true;
             lastOpenedForm.Controls["button1"].Visible = true;
             lastOpenedForm.Controls["button2"].Visible = true;
+            lastOpenedForm.Controls["button13"].Visible = true;
         }
 
         public static void showGameOptions()
@@ -96,7 +97,8 @@ namespace InfMan2
             lastOpenedForm.Controls["label18"].Visible = true;
             lastOpenedForm.Controls["textBox1"].Visible = true;
             lastOpenedForm.Controls["button8"].Visible = true;
-
+            lastOpenedForm.Controls["label19"].Visible = true;
+            lastOpenedForm.Controls["label20"].Visible = true;
         }
     }
 }

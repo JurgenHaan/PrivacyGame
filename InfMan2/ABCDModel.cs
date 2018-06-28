@@ -14,8 +14,9 @@ namespace InfMan2
         private string answerC;
         private string answerD;
         private string correctAnswer;
+        private string URL;
 
-        public ABCDModel(string question, string answer, string A, string B, string C, string D)
+        public ABCDModel(string question, string answer, string A, string B, string C, string D, string URL)
         {
             this.question = question;
             this.answerA = A;
@@ -23,6 +24,7 @@ namespace InfMan2
             this.answerC = C;
             this.answerD = D;
             this.correctAnswer = answer;
+            this.URL = URL;
         }
 
         public string getQuestion()
@@ -50,6 +52,11 @@ namespace InfMan2
         public string getAnswerD()
         {
             return answerD;
+        }
+
+        public string getURL()
+        {
+            return URL;
         }
     }
 }

@@ -9,7 +9,7 @@ namespace InfMan2
     class Data
     {
         public static List<Tuple<String, int>> list = new List<Tuple<string, int>>();
-        public static List<Tuple<String, bool>> trueFalseQuestionsList = new List<Tuple<string, bool>>();
+        public static List<Tuple<String, bool, String>> trueFalseQuestionsList = new List<Tuple<string, bool, String>>();
         public static List<ABCDModel> abcdQuestionsList = new List<ABCDModel>();
     }
 }

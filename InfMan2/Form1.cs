@@ -22,6 +22,7 @@ namespace InfMan2
             Controls["label1"].Visible = true;
             Controls["button1"].Visible = true;
             Controls["button2"].Visible = true;
+            Controls["button13"].Visible = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -92,6 +93,13 @@ namespace InfMan2
         private void button12_Click(object sender, EventArgs e)
         {
             GameManager.clickedABCD("D");
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var shop = new Shop();
+            shop.ShowDialog();
         }
     }
 }

@@ -13,6 +13,8 @@ namespace InfMan2
     {
         private static System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
         private static bool answer = false;
+        private static String url = "";
+        private static ABCDModel answerModel = null;
         private static string abcdAnswer = null;
         public static void startGamemode1()
         {
@@ -45,18 +47,22 @@ namespace InfMan2
             int index = random.Next(0,Data.trueFalseQuestionsList.Count);
             lastOpenedForm.Controls["label15"].Text = Data.trueFalseQuestionsList[index].Item1;
             answer = Data.trueFalseQuestionsList[index].Item2;
+            url = Data.trueFalseQuestionsList[index].Item3;
         }
 
         public static void clickedAnswerTrueFalse(bool clickedValue)
         {
+            Form lastOpenedForm = Application.OpenForms.Cast<Form>().Last();
             if (answer == clickedValue)
             {
-                Form lastOpenedForm = Application.OpenForms.Cast<Form>().Last();
+                
                 lastOpenedForm.Controls["label14"].Text = Int32.Parse(lastOpenedForm.Controls["label14"].Text) + Int32.Parse(lastOpenedForm.Controls["label13"].Text) + "";
                 lastOpenedForm.Controls["label13"].Text = Int32.Parse(lastOpenedForm.Controls["label13"].Text) + 10 + "";
                 showQuestion();
             } else
             {
+                lastOpenedForm.Controls["label19"].Text = "Het goede antwoord was: " + answer;
+                lastOpenedForm.Controls["label20"].Text = "Meer informatie: " + url;
                 timer.Stop();
                 stopGame();
             }
@@ -124,9 +130,10 @@ namespace InfMan2
 
         public static void handleABCD(bool success)
         {
+            Form lastOpenedForm = Application.OpenForms.Cast<Form>().Last();
             if (success)
             {
-                Form lastOpenedForm = Application.OpenForms.Cast<Form>().Last();
+                
                 lastOpenedForm.Controls["label14"].Text = Int32.Parse(lastOpenedForm.Controls["label14"].Text) + Int32.Parse(lastOpenedForm.Controls["label13"].Text) + "";
                 lastOpenedForm.Controls["label13"].Text = Int32.Parse(lastOpenedForm.Controls["label13"].Text) + 10 + "";
                 showABCDQuestion();
@@ -134,6 +141,27 @@ namespace InfMan2
             else
             {
                 timer.Stop();
+                
+                string model = "";
+                switch (abcdAnswer)
+                {
+                    case "A":
+                        model = answerModel.getAnswerA();
+                        break;
+                    case "B":
+                        model = answerModel.getAnswerB();
+                        break;
+                    case "C":
+                        model = answerModel.getAnswerC();
+                        break;
+                    case "D":
+                        model = answerModel.getAnswerD();
+                        break;
+                    default:
+                        break;
+                }
+                lastOpenedForm.Controls["label19"].Text = "Het goede antwoord was: " + model;
+                lastOpenedForm.Controls["label20"].Text = "Meer informatie: " + url;
                 stopGame();
             }
         }
@@ -149,6 +177,8 @@ namespace InfMan2
             lastOpenedForm.Controls["button11"].Text = Data.abcdQuestionsList[index].getAnswerC();
             lastOpenedForm.Controls["button12"].Text = Data.abcdQuestionsList[index].getAnswerD();
             abcdAnswer = Data.abcdQuestionsList[index].getAnswer();
+            answerModel = Data.abcdQuestionsList[index];
+            url = Data.abcdQuestionsList[index].getURL();
         }
 
     }
