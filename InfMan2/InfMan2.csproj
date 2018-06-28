@@ -89,10 +89,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Resources\unispace bd it.ttf" />
-    <None Include="Resources\unispace bd.ttf" />
-    <None Include="Resources\unispace it.ttf" />
-    <None Include="Resources\unispace rg.ttf" />
+    <Resource Include="Resources\unispace.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
