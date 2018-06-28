@@ -62,7 +62,7 @@ namespace InfMan2
             } else
             {
                 lastOpenedForm.Controls["label19"].Text = "Het goede antwoord was: " + answer;
-                lastOpenedForm.Controls["label20"].Text = "Meer informatie: " + url;
+                lastOpenedForm.Controls["label20"].Text = url;
                 timer.Stop();
                 stopGame();
             }

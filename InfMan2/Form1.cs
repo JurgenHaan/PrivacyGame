@@ -101,5 +101,12 @@ namespace InfMan2
             var shop = new Shop();
             shop.ShowDialog();
         }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+            Form lastOpenedForm = Application.OpenForms.Cast<Form>().Last();
+            String url = lastOpenedForm.Controls["label20"].Text;
+            System.Diagnostics.Process.Start(url);
+        }
     }
 }

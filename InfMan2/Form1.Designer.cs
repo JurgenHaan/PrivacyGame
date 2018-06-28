@@ -393,11 +393,14 @@
             // label20
             // 
             this.label20.AutoSize = true;
+            this.label20.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label20.Location = new System.Drawing.Point(31, 269);
+            this.label20.MaximumSize = new System.Drawing.Size(700, 100);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(54, 17);
             this.label20.TabIndex = 33;
             this.label20.Text = "label20";
+            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // Form1
             // 
