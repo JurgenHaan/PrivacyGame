@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,10 +16,19 @@ namespace InfMan2
         public Form1()
         {
             InitializeComponent();
+            PrivateFontCollection pfc = new PrivateFontCollection();     
+            pfc.AddFontFile("Resources\\unispace.ttf");
             foreach (Control control in Controls)
             {
                 control.Visible = false;
+                control.Font = new Font(pfc.Families[0], control.Font.Size - 2);
+                //Console.WriteLine(control.GetType());
+                //if (control.GetType().IsEquivalentTo(Label))
+                //{
+
+                //}
             }
+
             Controls["pictureBox1"].Visible = true;
             Controls["label1"].Visible = true;
             Controls["button1"].Visible = true;
