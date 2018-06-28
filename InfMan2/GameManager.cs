@@ -90,6 +90,7 @@ namespace InfMan2
         {
             Form lastOpenedForm = Application.OpenForms.Cast<Form>().Last();
             lastOpenedForm.Controls["label18"].Text = lastOpenedForm.Controls["label14"].Text;
+            Data.TotalScore = Data.TotalScore + Int32.Parse(lastOpenedForm.Controls["label14"].Text);
             lastOpenedForm.Controls["label14"].Text = "0";
             lastOpenedForm.Controls["label13"].Text = "30";
             ViewController.showScore();
