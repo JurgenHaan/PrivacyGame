@@ -19,6 +19,7 @@ namespace InfMan2
             {
                 control.Visible = false;
             }
+            Controls["pictureBox1"].Visible = true;
             Controls["label1"].Visible = true;
             Controls["button1"].Visible = true;
             Controls["button2"].Visible = true;
