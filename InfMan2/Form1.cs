@@ -33,11 +33,9 @@ namespace InfMan2
                     Button curButton = (Button) control;
                     var path = System.Environment.CurrentDirectory + "\\img\\buybutton.png";
                     string[] words = path.Split('\\');
-                    var newPath = words[0] + "\\" + words[1] + "\\" + words[2] + "\\" + words[3] 
+                    var newPath = words[0] + "\\" + words[1] + "\\" + words[2] + "\\" + words[3]
                                   + "\\" + words[4] + "\\" + words[7] + "\\" + words[8];
-
-                    curButton.Image = new Bitmap(newPath);       
-                    
+                    curButton.Image = new Bitmap(newPath);                      
                 }
 
 

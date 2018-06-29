@@ -193,7 +193,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(436, 386);
+            this.button5.Location = new System.Drawing.Point(436, 450);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.MaximumSize = new System.Drawing.Size(300, 25);
             this.button5.Name = "button5";
@@ -379,7 +379,7 @@
             // 
             this.button9.AutoSize = true;
             this.button9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button9.Location = new System.Drawing.Point(287, 224);
+            this.button9.Location = new System.Drawing.Point(287, 231);
             this.button9.Margin = new System.Windows.Forms.Padding(2);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(24, 23);
@@ -392,7 +392,7 @@
             // 
             this.button10.AutoSize = true;
             this.button10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button10.Location = new System.Drawing.Point(287, 253);
+            this.button10.Location = new System.Drawing.Point(287, 281);
             this.button10.Margin = new System.Windows.Forms.Padding(2);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(24, 23);
@@ -405,7 +405,7 @@
             // 
             this.button11.AutoSize = true;
             this.button11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button11.Location = new System.Drawing.Point(287, 282);
+            this.button11.Location = new System.Drawing.Point(287, 329);
             this.button11.Margin = new System.Windows.Forms.Padding(2);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(24, 23);
@@ -418,7 +418,7 @@
             // 
             this.button12.AutoSize = true;
             this.button12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button12.Location = new System.Drawing.Point(287, 312);
+            this.button12.Location = new System.Drawing.Point(287, 374);
             this.button12.Margin = new System.Windows.Forms.Padding(2);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(25, 23);
@@ -559,7 +559,7 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Prive-I-See";
+            this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
