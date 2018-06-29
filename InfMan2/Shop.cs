@@ -20,7 +20,7 @@ namespace InfMan2
             pfc.AddFontFile("Resources\\unispace.ttf");
             foreach (Control control in Controls)
             {
-                //control.Font = new Font(pfc.Families[0], control.Font.Size - 3);
+                control.Font = new Font(pfc.Families[0], control.Font.Size - 2);
             }
 
             this.Controls["label2"].Text = Data.TotalScore + "";
