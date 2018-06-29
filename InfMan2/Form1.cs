@@ -42,11 +42,19 @@ namespace InfMan2
 
 
             }
+            Button btnABCD1 = (Button)Controls["button9"];
+            Button btnABCD2 = (Button)Controls["button10"];
+            Button btnABCD3 = (Button)Controls["button11"];
+            Button btnABCD4 = (Button)Controls["button12"];
             Button btnItem1 = (Button) Controls["button14"];
             Button btnItem2 = (Button) Controls["button15"];
 
             btnItem1.Image = default(Bitmap);
             btnItem2.Image = default(Bitmap);
+            btnABCD1.Image = default(Bitmap);
+            btnABCD2.Image = default(Bitmap);
+            btnABCD3.Image = default(Bitmap);
+            btnABCD4.Image = default(Bitmap);
 
             Controls["pictureBox1"].Visible = true;
             Controls["label1"].Visible = true;
