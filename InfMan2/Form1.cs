@@ -52,7 +52,6 @@ namespace InfMan2
                     
                 }
 
-
             }
             Button btnABCD1 = (Button)Controls["button9"];
             Button btnABCD2 = (Button)Controls["button10"];

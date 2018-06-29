@@ -181,7 +181,7 @@ namespace InfMan2
                         break;
                 }
                 lastOpenedForm.Controls["label19"].Text = "Het goede antwoord was: " + model;
-                lastOpenedForm.Controls["label20"].Text = "Meer informatie: " + url;
+                lastOpenedForm.Controls["label20"].Text = url;
                 stopGame();
             }
         }
