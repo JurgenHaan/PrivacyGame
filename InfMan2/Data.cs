@@ -12,5 +12,9 @@ namespace InfMan2
         public static List<Tuple<String, bool, String>> trueFalseQuestionsList = new List<Tuple<string, bool, String>>();
         public static List<ABCDModel> abcdQuestionsList = new List<ABCDModel>();
         public static int TotalScore = 0;
+        public static int TotalSkips = 0;
+        public static int TotalTimeStops = 0;
+        public static int TotalExtenders = 0;
+
     }
 }

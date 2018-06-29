@@ -15,6 +15,7 @@ namespace InfMan2
         {
             hideAllItems();
             Form lastOpenedForm = Application.OpenForms.Cast<Form>().Last();
+            lastOpenedForm.Controls["pictureBox1"].Visible = true;
             lastOpenedForm.Controls["label1"].Visible = true;
             lastOpenedForm.Controls["button1"].Visible = true;
             lastOpenedForm.Controls["button2"].Visible = true;
@@ -69,6 +70,18 @@ namespace InfMan2
             lastOpenedForm.Controls["button5"].Visible = true;
             lastOpenedForm.Controls["button6"].Visible = true;
             lastOpenedForm.Controls["button7"].Visible = true;
+            if (Data.TotalExtenders > 0)
+            {
+                lastOpenedForm.Controls["button15"].Visible = true;
+            }
+            //if (Data.TotalSkips > 0)
+            //{
+            //    lastOpenedForm.Controls["button16"].Visible = true;
+            //}
+            if (Data.TotalTimeStops > 0)
+            {
+                lastOpenedForm.Controls["button14"].Visible = true;
+            }
             GameManager.startGamemode1();
         }
 
@@ -84,6 +97,18 @@ namespace InfMan2
             lastOpenedForm.Controls["button10"].Visible = true;
             lastOpenedForm.Controls["button11"].Visible = true;
             lastOpenedForm.Controls["button12"].Visible = true;
+            if (Data.TotalExtenders > 0)
+            {
+                lastOpenedForm.Controls["button15"].Visible = true;
+            }
+            //if (Data.TotalSkips > 0)
+            //{
+            //    lastOpenedForm.Controls["button16"].Visible = true;
+            //}
+            if (Data.TotalTimeStops > 0)
+            {
+                lastOpenedForm.Controls["button14"].Visible = true;
+            }
             GameManager.startGamemode2();
         }
 

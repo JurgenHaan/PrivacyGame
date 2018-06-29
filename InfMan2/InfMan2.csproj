@@ -81,6 +81,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="img\_main_menu.xcf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -90,6 +91,24 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Content Include="img\add_plus_clock_time_alarm_watch.png" />
+    <Content Include="img\buybutton.png" />
+    <Content Include="img\dataprivacy.png" />
+    <Content Include="img\info.png" />
+    <Content Include="img\main_menu.jpg" />
+    <Content Include="img\plus.png" />
+    <Content Include="img\preview.jpg" />
+    <Content Include="img\SandLoper.png" />
+    <Content Include="img\score.png" />
+    <Content Include="img\shopSignTransparent.png" />
+    <Content Include="img\shop_items_background.png" />
+    <Content Include="img\skipQ.png" />
+    <Content Include="img\stop_time.png" />
+    <Content Include="img\time-plus-icon-blue-vector2.png" />
+    <Content Include="img\_main_menu_kaal.jpg" />
+    <Content Include="img\_official_Shop.jpg" />
+    <Content Include="img\_official_Shop_resized.jpg" />
+    <Content Include="img\_official_Town.jpg" />
     <Content Include="Resources\unispace.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

@@ -16,6 +16,7 @@ namespace InfMan2
         private static String url = "";
         private static ABCDModel answerModel = null;
         private static string abcdAnswer = null;
+        private static int oldValue;
         public static void startGamemode1()
         {
             DataFiller.fillQuestions();
@@ -38,6 +39,24 @@ namespace InfMan2
             timer.Tick += TimerEventProcessor;
             timer.Interval = 1000;
             timer.Start();
+        }
+
+        public static void extendTimer(int amount)
+        {
+            timer.Stop();
+            Form lastOpenedForm = Application.OpenForms.Cast<Form>().Last();
+            int time = Int32.Parse(lastOpenedForm.Controls["label13"].Text);
+            time += amount;
+            lastOpenedForm.Controls["label13"].Text = time - 1 + "";
+            if (time - 1 != 0)
+            {
+                timer.Start();
+            }
+            else
+            {
+                timer.Stop();
+                stopGame();
+            }
         }
 
         public static void showQuestion()

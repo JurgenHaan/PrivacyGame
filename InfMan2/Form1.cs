@@ -21,13 +21,32 @@ namespace InfMan2
             foreach (Control control in Controls)
             {
                 control.Visible = false;
-                control.Font = new Font(pfc.Families[0], control.Font.Size - 2);
-                //Console.WriteLine(control.GetType());
-                //if (control.GetType().IsEquivalentTo(Label))
-                //{
 
-                //}
+                if (control.GetType() == typeof(Label))
+                {
+                    control.Font = new Font(pfc.Families[0], control.Font.Size + 1);
+                    
+                }
+                else if (control.GetType() == typeof(Button))
+                {
+                    control.Font = new Font(pfc.Families[0], control.Font.Size-2);
+                    Button curButton = (Button) control;
+                    var path = System.Environment.CurrentDirectory + "\\img\\buybutton.png";
+                    string[] words = path.Split('\\');
+                    var newPath = words[0] + "\\" + words[1] + "\\" + words[2] + "\\" + words[3] 
+                                  + "\\" + words[4] + "\\" + words[7] + "\\" + words[8];
+
+                    curButton.Image = new Bitmap(newPath);       
+                    
+                }
+
+
             }
+            Button btnItem1 = (Button) Controls["button14"];
+            Button btnItem2 = (Button) Controls["button15"];
+
+            btnItem1.Image = default(Bitmap);
+            btnItem2.Image = default(Bitmap);
 
             Controls["pictureBox1"].Visible = true;
             Controls["label1"].Visible = true;
@@ -118,6 +137,27 @@ namespace InfMan2
             Form lastOpenedForm = Application.OpenForms.Cast<Form>().Last();
             String url = lastOpenedForm.Controls["label20"].Text;
             System.Diagnostics.Process.Start(url);
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            GameManager.extendTimer(10);
+            Data.TotalExtenders -= 1;
+            if (Data.TotalExtenders == 0)
+            {
+                Controls["button15"].Hide();
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            GameManager.extendTimer(5);
+            Data.TotalTimeStops -= 1;
+
+            if (Data.TotalTimeStops == 0)
+            {
+                Controls["button14"].Hide();
+            }
         }
     }
 }
